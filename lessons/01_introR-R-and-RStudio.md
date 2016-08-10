@@ -96,28 +96,10 @@ Best practice is to enter the commands in the **script editor**, and save the sc
 Now let's try entering commands to the **script editor** and using the comments character `#` to add descriptions and highlighting the text to run:
 	
 	# Intro to R Lesson
-	
 	## Interacting with R
 	
 	### I am adding 3 and 5. R is fun!
 	3+5
-
-![Running in the script editor](../img/script_editor.png)
-
-You should see the command run in the console and output the result.
-
-![Script editor output](../img/script_editor_output.png)
-	
-What happens if we do that same command without the comment symbol `#`? Re-run the command after removing the # sign in the front:
-
-```{r, purl=FALSE, eval=FALSE}
-I am adding 3 and 5. R is fun!
-3+5
-```
-
-Now R is trying to run that sentence as a command, and it 
-doesn't work. We get an error in the console *"Error: unexpected symbol in "I am" means that the R interpreter did not know what to do with that command."*
-
 
 ### Console command prompt
 
