@@ -51,11 +51,9 @@ Let's create a new project directory for our "Introduction to R" lesson today.
 3. **Environment/History**: environment shows all active objects and history keeps track of all commands run in console
 4. **Files/Plots/Packages/Help**
 
-## Organizing your working directory
+## Viewing your working directory
 
-### Viewing your working directory
-
-Before we organize our working directory, let's check to see where our current working directory is located by typing into the console:
+Before we odo anything else, let's check to see what our current working directory is by typing into the console:
 
 `getwd()`
 
@@ -69,12 +67,11 @@ If you wanted to choose a different directory to be your working directory, you 
  
 ![Setting your working directory](../img/setwd.png)
 
-
-* Download metadata file using [this link](https://github.com/hbc/NGS_Data_Analysis_Course/raw/master/sessionII/data/mouse_exp_design.csv)
+Let's populate our directory by downloading a metadata file using [this link](https://github.com/hbc/NGS_Data_Analysis_Course/raw/master/sessionII/data/mouse_exp_design.csv). We will be using the data in this file to practice on throughout this morning session.
 
 ## Interacting with R
 
-Let's start playing with R! There are **two main ways** of interacting with R in RStudio: using the **console** or by using **script editor** (plain text files that contain your code).
+Let's start playing with R! There are **two main ways** of interacting with R in RStudio: using the **console** or by using **script editor** (plain text or *R markdown* files that contain your code).
 
 ### Console window
 The **console window** (in RStudio, the bottom left panel) is the place where R is waiting for you to tell it what to do, and where it will show the results of a command.  You can type commands directly into the console, but they will be forgotten when you close the session. 
@@ -123,14 +120,6 @@ a complete command. Often this can be due to you having not 'closed' a parenthes
 **Escaping a command and getting a new prompt**: `esc`
 
 If you're in Rstudio and you can't figure out why your command isn't running, you can click inside the console window and press `esc` to escape the command and bring back a new prompt `>`.
-
-
-***
-**Exercise**
-
-1. Try highlighting only `3 +` from your script editor and running it. Find a way to bring back the command prompt `>` in the console.
-
-***
 
 
 ## Best practices

@@ -1,13 +1,9 @@
 ---
 title: "Data manipulation"
 authors: Meeta Mistry and Mary Piper
-date: "07/05/16"
 layout: topic
-minutes: 90
----
 
-## Learning Objectives
-* Learning how to match and re-order data 
+---
 
 ## Matching data 
 
@@ -247,9 +243,6 @@ Our metadata table is almost complete, we just need to add one additional column
 	age_in_days <- c(40, 32, 38, 35, 41, 32, 34, 26, 28, 28, 30, 32)
 	
 	new_metadata <- cbind(new_metadata, age_in_days)
-
-Now our metadata is complete, and we are ready for data visulaization.
-
 
 ---
 *This lesson has been developed by members of the teaching team at the [Harvard Chan Bioinformatics Core (HBC)](http://bioinformatics.sph.harvard.edu/). These are open access materials distributed under the terms of the [Creative Commons Attribution license](https://creativecommons.org/licenses/by/4.0/) (CC BY 4.0), which permits unrestricted use, distribution, and reproduction in any medium, provided the original author and source are credited.*

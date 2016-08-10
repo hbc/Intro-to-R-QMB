@@ -164,14 +164,6 @@ species <- c("ecoli", "human", "corn")
 species
 ```
 
-***
-**Exercise**
-
-1. Create a vector of numeric and character values by _combining_ the two vectors that we just created (`glengths` and `species`). Assign this combined vector to a new variable called `combined`. *Hint: you will need to use the combine `c()` function to do this*. 
-Print the `combined` vector in the console, what looks different compared to the original vectors?
-
-***
-
 ### Factors
 
 A **factor** is a special type of vector that is used to **store categorical data**. Each unique category is referred to as a **factor level**. Factors are built on top of integer vectors such that each **factor level** is assigned an **integer value**, creating value-label pairs. 
@@ -194,21 +186,6 @@ So, what exactly happened when we applied the `factor()` function?
 The expression vector is categorical, in that all the values in the vector belong to a set of categories; in this case, the categories are `low`, `medium`, and `high`. By turning the expression vector into a factor, the **categories are assigned integers alphabetically**, with high=1, low=2, medium=3. This in effect assigns the different factor levels. You can view the newly created factor variable and the levels in the **Environment** window.
 ![Factor variables in environment](../img/factors.png)
 
-
-***
-**Exercise**
-
-Let's say that in our experimental analyses, we are working with three different sets of cells: normal, cells knocked out for geneA (a very exciting gene), and cells overexpressing geneA. We have three replicates for each celltype.
-
-1. Create a vector named `samplegroup` using the code below. This vector will contain nine elements: 3 control ("CTL") samples, 3 knock-out ("KO") samples, and 3 over-expressing ("OE") samples:
-
-	```{r, purl=FALSE}
-	samplegroup <- c("CTL", "CTL", "CTL", "KO", "KO", "KO", "OE", "OE", "OE")
-	```
-
-2. Turn `samplegroup` into a factor data structure.
-
-***
 
 ### Matrix
 
@@ -269,12 +246,6 @@ Print out the list to screen to take a look at the components:
 
 There are three components corresponding to the three different variables we passed in, and what you see is that structure of each is retained. Each component of a list is referenced based on the number position. For example, since the dataframe was the second structure we passed in, it is referenced with `list1[[2]]`. We will talk more about how to inspect and manipulate components of lists in later lessons.
 
-***
-**Exercise**
-
-1. Create a list with `species`, `glengths`, and `number`.
-
-***
 
 ## Functions and their arguments
 
@@ -301,7 +272,7 @@ However, most functions can take several arguments. If you don't specify a requi
 
 The **defaults** represent standard values that the author of the function specified as being "good enough in standard cases". An example would be what symbol to use in a plot. However, if you want something specific, simply change the argument yourself with a value of your choice.
 
-### Basic functions
+## Basic functions
 
 We have already used a few examples of basic functions in the previous lessons i.e `getwd()`, `c()`, and  `factor()`. These functions are available as part of R's built in capabilities, and we will explore a few more of these base functions below. 
 
@@ -350,10 +321,6 @@ If you provide the arguments in the exact same order as they are defined (in the
 However, it's usually not recommended practice because it's a lot of remembering to do, and if you share your code with others that includes less known functions
 it makes your code difficult to read. (It's however OK to not include the names of the arguments for basic functions like `mean`, `min`, etc...). Another advantage of naming arguments, is that the order doesn't matter.  This is useful when a function has many arguments. 
 
-***
-**Exercise** 
-
-1. Another commonly used base function is `mean()`. Use this function to calculate an average for the `glengths` vector.
 
 ---
 
