@@ -176,54 +176,6 @@ Create an index with logical operators to select all values in the `age` vector 
 
 	age[idx]
 
-### Factors
-
-We briefly introduced factors in the last lesson, but factors only become more intuitive once you've had a chance to work with them. The elements of the `expression` factor created previously had the following categories or levels: low, medium, and high. The categories were assigned integers alphabetically, with high=1, low=2, medium=3 . To view the integer assignments under the hood you can use `str`:
-
-	str(expression)
-	
-	Factor w/ 3 levels "high","low","medium": 2 1 3 1 2 3 1
-
-The unique elements are referred to as "factor levels", and we can use the function `levels()` to idenitfy the different categories/levels for a factor:  
-
-	levels(expression)
-
-With the establishment of defined levels, we can then use the `summary()` function to classify and count the elements for each level: 
-
-	summary(expression)
-
-Factors can be ordered or unordered. Sometimes, the order of the factors does not matter, other times you might want to specify the order because it is meaningful (e.g., "low" < "medium" < "high") or it is required by particular type of analysis. 
-
-In the example above, the factor is unordered. You can check this by trying the following:
-
-	min(expression) # doesn't work!
-
-To order factor levels, you can simply add an argument to the function `ordered=TRUE`:
-
-	factor(expression, ordered=TRUE)
-	
-	[1] low    high   medium high   low    medium high  
-	Levels: high < low < medium
-
-But what you'll find is that by default R will order levels by alpahabetical order. In order to get the desired ordering (i.e. "low" < "medium" < "high") we need to specify the order of levels and add the argument `ordered=TRUE`.
-
-```{r}
-expression <- factor(expression, levels=c("low", "medium", "high"), ordered=TRUE)
-levels(expression)
-min(expression) ## works!
-```
-Since factors are special vectors, the same rules for selecting values using indices apply. Let's extract the values of the factor with `high` expression:
-
-First, we create a logical vector of TRUE and FALSE values:
-
-```{r}
-idx <- expression == "high"
-```
-
-Then, we use the brackets `[ ]` to extract the TRUE values from the dataset:
-
-```{r}
-expression[idx]
 ```
  
 ### Dataframes
