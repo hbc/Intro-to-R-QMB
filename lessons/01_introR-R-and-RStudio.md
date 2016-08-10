@@ -2,22 +2,16 @@
 layout: topic
 title: Introduction to R and RStudio
 authors: Mary Piper and Meeta Mistry
-date: "Tuesday, June 28, 2016"
+date: "Monday, August 15, 2016"
 ---
-Approximate time: 30 minutes
-
-## Learning Objectives
-
-* An introduction to R and RStudio
-* Creating a directory structure for efficient data management
-* Learning how to interact with R
+Approximate time: 10 minutes
 
 ## What is R?
 
 R is a programming language and environment for statistical computing and graphics. 
 
 * Based on the statistical computing programming language S.
-* Open source software 
+* Open source
 * Superior (if not just comparable) to commercial alternatives like MATLAB. 
 * Available on all platforms.
 
@@ -48,7 +42,7 @@ Let's create a new project directory for our "Introduction to R" lesson today.
 
 ![RStudio interface](../img/Rstudio_interface.png)
 
-## Presentation of RStudio
+## RStudio interface
 
 **The RStudio interface has four main panels:**
 
@@ -76,34 +70,18 @@ If you wanted to choose a different directory to be your working directory, you 
 ![Setting your working directory](../img/setwd.png)
 
 
-### Structuring your working directory
-To organize your working directory for a particular analysis, you should separate the original data (raw data) from intermediate datasets. For instance, you may want to create a `data/` directory within your working directory that stores the raw data, and have a `results/` directory for intermediate datasets and a `figures/` directory for the plots you will generate.
-
-Let's create these three directories within your working directory by clicking on `New Folder` within the `Files` tab. 
-
-![Structuring your working directory](../img/wd_setup.png)
-
-
-When finished, your working directory should look like:
-
-![Your organized working directory](../img/complete_wd_setup.png)
-
-### Adding files to your working directory
-
-There are a few files that we will be working with in the next few lessons and you can access them using the links provided below. If you right click on the link, and "Save link as..". Choose `~/Desktop/Intro-to-R/data` as the destination of the file. You should now see the file appear in your working directory.
-
 * Download metadata file using [this link](https://github.com/hbc/NGS_Data_Analysis_Course/raw/master/sessionII/data/mouse_exp_design.csv)
 
 ## Interacting with R
 
-Now that we have our interface and directory structure set up, let's start playing with R! There are **two main ways** of interacting with R in RStudio: using the **console** or by using **script editor** (plain text files that contain your code).
+Let's start playing with R! There are **two main ways** of interacting with R in RStudio: using the **console** or by using **script editor** (plain text files that contain your code).
 
 ### Console window
 The **console window** (in RStudio, the bottom left panel) is the place where R is waiting for you to tell it what to do, and where it will show the results of a command.  You can type commands directly into the console, but they will be forgotten when you close the session. 
 
 Let's test it out:
 
-```{r, purl=FALSE}
+```
 3 + 5
 ```
 
@@ -118,11 +96,10 @@ Best practice is to enter the commands in the **script editor**, and save the sc
 Now let's try entering commands to the **script editor** and using the comments character `#` to add descriptions and highlighting the text to run:
 	
 	# Intro to R Lesson
-	# Feb 16th, 2016
-
-	# Interacting with R
 	
-	## I am adding 3 and 5. R is fun!
+	## Interacting with R
+	
+	### I am adding 3 and 5. R is fun!
 	3+5
 
 ![Running in the script editor](../img/script_editor.png)

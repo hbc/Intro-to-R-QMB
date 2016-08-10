@@ -2,15 +2,8 @@
 layout: topic
 title: R Syntax and Data Structures
 authors: Meeta Mistry and Mary Piper
-date: "Tuesday, June 28, 2016"
+
 ---
-Approximate time: 70 min
-
-## Learning Objectives
-
-* Become familiar with R syntax
-* Understand variables and the assignment operator in R
-* Understand the various data types and data structures in R
 
 ## The R syntax
 Now that we know how to talk with R via the script editor or the console, we want to use R for something more than adding numbers. To do this, we need to know more about the R syntax. 
@@ -61,10 +54,6 @@ The assignment operator (`<-`) assigns **values on the right** to **variables on
 
 ## Variables
 
-A variable is a symbolic name for (or reference to) information. Variables in computer programming are analogous to "buckets", where information can be maintained and referenced. On the outside of the bucket is a name. When referring to the bucket, we use the name of the bucket, not the data stored in the bucket.
-
-In the example above, we created a variable or a 'bucket' called `x`. Inside we put a value, `3`. 
-
 Let's create another variable called `y` and give it a value of 5. 
 
 ```
@@ -81,7 +70,7 @@ You can also view information on the variable by looking in your `Environment` w
 
 ![Viewing your environment](../img/environment.png)
 
-Now we can reference these buckets by name to perform mathematical operations on the values contained within. What do you get in the console for the following operation: 
+What do you get in the console for the following operation: 
 
 ```
 x + y
@@ -92,12 +81,6 @@ Try assigning the results of this operation to another variable called `number`.
 ```
 number <- x + y
 ```
-
-***
-**Exercise**
-
-1. Try changing the value of the variable `x` to 5. What happens to `number`?
-2. Now try changing the value of variable `y` to contain the value 10. What do you need to do, to update the variable `number`?
 
 ***
 
@@ -141,7 +124,7 @@ The table below provides examples of each of the commonly used data types:
 
 ## Data Structures
 
-We know that variables are like buckets, and so far we have seen that bucket filled with a single value. Even when `number` was created, the result of the mathematical operation was a single value. **Variables can store more than just a single value, they can store a multitude of different data structures.** These include, but are not limited to, vectors (`c`), factors (`factor`), matrices (`matrix`), data frames (`data.frame`) and lists (`list`).
+**Variables can store more than just a single value, they can store a multitude of different data structures.** These include, but are not limited to, vectors (`c`), factors (`factor`), matrices (`matrix`), data frames (`data.frame`) and lists (`list`).
 
 
 ### Vectors
@@ -160,17 +143,7 @@ or logical values,
 
 **Note that all values in a vector must be of the same data type.** If you try to create a vector with more than a single data type, R will try to coerce it into a single data type. 
 
-For example, if you were to try to create the following vector:
-
-![mixed vector](../img/vector3.png)
-
-R will coerce it into:
-
-![mixed img](../img/vector4.png)
-
-The analogy for a vector is that your bucket now has different compartments; these compartments in a vector are called *elements*. 
-
-Each **element** contains a single value, and there is no limit to how many elements you can have. A vector is assigned to a single variable, because regardless of how many elements it contains, in the end it is still a single entity (bucket). 
+Each **element** in a vector contains a single value, and there is no limit to how many elements you can have. A vector is assigned to a single variable, because regardless of how many elements it contains, in the end it is still a single entity. 
 
 Let's create a vector of genome lengths and assign it to a variable called `glengths`. 
 
@@ -261,7 +234,7 @@ Beware of `data.frame()`’s default behaviour which turns **character vectors i
 
 	df
 
-Upon inspection of our dataframe, we see that although the species vector was a character vector, it automatically got converted into a factor inside the data frame (the removal of quotation marks). We will show you how to change the default behavior of a function in the next lesson.
+Upon inspection of our dataframe, we see that although the species vector was a character vector, it automatically got converted into a factor inside the data frame (the removal of quotation marks). 
 
 *Note that you can view your data.frame object by clicking on its name in the `Environment` window.*
 
@@ -270,7 +243,6 @@ Upon inspection of our dataframe, we see that although the species vector was a 
 Lists are a data structure in R that can be perhaps a bit daunting at first, but soon become amazingly useful. A list is a data structure that can hold any number of any types of other data structures.
 
 ![list](../img/list.png)
-
 
 If you have variables of different data structures you wish to combine, you can put all of those into one list object by using the `list()` function and placing all the items you wish to combine within parantheses:
 
