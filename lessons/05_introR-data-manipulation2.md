@@ -1,14 +1,7 @@
 ---
 title: "Data manipulation"
 authors: Meeta Mistry and Mary Piper
-date: "Tuesday, June 28, 2016"
 ---
-Approximate time: 60 min
-
-## Learning Objectives
-* Using indexes and sequences to select data from dataframes
-* Subsetting data using logical operators
-* Writing data to file
 
 ### Dataframes
 
