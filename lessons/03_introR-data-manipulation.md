@@ -25,7 +25,7 @@ When working with genomic data, we often have a metadata file containing informa
 ?read.csv
 ```
 
-The `read.csv` function has *one required argument* and several *options* that can be specified. The mandatory argument is a path to the file and filename, which in our case is `data/mouse_exp_design.csv`. We will put the function to the right of the assignment operator, meaning that **any output will be saved as the variable name provided on the left**.
+The `read.csv` function has *one required argument* and several *options* that can be specified. The mandatory argument is a path to the file and filename, which in our case is `mouse_exp_design.csv`. We will put the function to the right of the assignment operator, meaning that **any output will be saved as the variable name provided on the left**.
 
 	metadata <- read.csv(file='mouse_exp_design.csv')
 
@@ -286,7 +286,7 @@ Everything we have done so far has only modified the data in R; the files have r
 
 To write our matrix to file in comma separated format (.csv), we can use the `write.csv` function. There are two required arguments: the variable name of the data structure you are exporting, and the path and filename that you are exporting to. By default the delimiter is set, and columns will be separated by a comma:
 
-	write.csv(sub_meta, file="data/subset_meta.csv")
+	write.csv(sub_meta, file="subset_meta.csv")
 
 Similar to reading in data, there are a wide variety of functions available allowing you to export data in specific formats. Another commonly used function is `write.table`, which allows you to specify the delimiter you wish to use. This function is commonly used to create tab-delimited files.
 
