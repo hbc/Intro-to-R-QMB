@@ -60,7 +60,7 @@ Let's create another variable called `y` and give it a value of 5.
 y <- 5
 ```
 
-When assigning a value to an variable, R does not print anything to the console. You can force to print the value by using parentheses or by typing the variable name.
+When assigning a value to an variable, R does not print anything to the console. You can print the value by typing the variable name.
 
 ```
 y
