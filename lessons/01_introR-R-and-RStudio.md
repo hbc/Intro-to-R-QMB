@@ -53,7 +53,7 @@ Let's create a new project directory for our "Introduction to R" lesson today.
 
 ## Viewing your working directory
 
-Before we odo anything else, let's check to see what our current working directory is by typing into the console:
+Before we do anything else, let's check to see what our current working directory is by typing into the console:
 
 `getwd()`
 
@@ -100,7 +100,7 @@ Now let's try entering commands to the **script editor** and using the comments 
 
 ### Console command prompt
 
-Interpreting the command prompt can help understand when R is ready to accept commands. Below lists the different states of the command prompt and how you can exit a command:
+Interpreting the command prompt can help one understand when R is ready to accept commands:
 
 **Console is ready to accept commands**: `>`.
 
