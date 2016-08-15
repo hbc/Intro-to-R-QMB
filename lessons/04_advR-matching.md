@@ -7,13 +7,7 @@ layout: topic
 
 ## Matching data 
 
-Often when working with genomic data, we have a data file that corresponds with our metadata file. The data file contains measurements from the biological assay for each individual sample. In our case, the biological assay is gene expression and data was generated using RNA-Seq. 
-
-Let's open our `Intro-to-R` project saved on the `Desktop`, and download a counts file of RPKM values into our `data/` folder. 
-
-Open the project in *RStudio* by selecting `Open Project...` from the `File` menu and navigating to the `Intro-to-R` project. When you open the project, you should see your environment populate with the variables we created in the last session. If your environment does not populate, you can re-run the entire script.
-
-Now download the counts file by clicking on the "Save link as.." after right clicking on [this link](https://raw.githubusercontent.com/hbc/NGS_Data_Analysis_Course/master/sessionII/data/counts.rpkm.csv)
+Often when working with genomic data, we have a data file that corresponds with our metadata file. The data file contains measurements from the biological assay for each individual sample. In our case, the biological assay is gene expression and data was generated using RNA-Seq. Download the counts file by clicking on the "Save link as.." after right clicking on [this link](https://raw.githubusercontent.com/hbc/NGS_Data_Analysis_Course/master/sessionII/data/counts.rpkm.csv)
 
 	rpkm_data <- read.csv("data/counts.rpkm.csv")
 
