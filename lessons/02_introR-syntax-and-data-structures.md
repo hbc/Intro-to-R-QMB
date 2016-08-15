@@ -318,8 +318,7 @@ If you provide the arguments in the exact same order as they are defined (in the
 	round(3.14159, 2)
 
 
-However, it's usually not recommended practice because it's a lot of remembering to do, and if you share your code with others that includes less known functions
-it makes your code difficult to read. (It's however OK to not include the names of the arguments for basic functions like `mean`, `min`, etc...). Another advantage of naming arguments, is that the order doesn't matter.  This is useful when a function has many arguments. 
+However, it's usually not recommended practice because it's a lot of memorizing with the possibility of errors, and if you share your code with others that includes less known functions it makes your code difficult to read. (It's however OK to not include the names of the arguments for basic functions like `mean`, `min`, etc...). Another advantage of naming arguments, is that the order doesn't matter, which is useful when a function has many arguments. 
 
 
 ---
