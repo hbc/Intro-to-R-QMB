@@ -279,12 +279,6 @@ Alternatively, we could try looking at only the first two replicates of each sam
 
 	sub_meta <- subset(metadata, replicate < 3, select = c('genotype', 'celltype'))
 	
-***
-**Exercise** 
-
-1. Return only the celltype information for those samples from `metadata` dataframe with genotype "KO".
-
-***
 
 ### Writing to file 
 
