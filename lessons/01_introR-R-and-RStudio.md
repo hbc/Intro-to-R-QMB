@@ -67,7 +67,7 @@ If you wanted to choose a different directory to be your working directory, you 
  
 ![Setting your working directory](../img/setwd.png)
 
-Let's populate our directory by downloading a metadata file using [this link](https://github.com/hbc/NGS_Data_Analysis_Course/raw/master/sessionII/data/mouse_exp_design.csv). We will be using the data in this file to practice on throughout this morning session.
+Let's populate our directory by downloading a metadata file using [this link](https://raw.githubusercontent.com/rkhetani/Intro-to-R_IDC2017/master/data/mouse_exp_design.csv). We will be using the data in this file to practice on throughout this session.
 
 ## Interacting with R
 
